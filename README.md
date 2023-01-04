@@ -50,3 +50,5 @@ Below some test cases I made for APIs + screenshots from Postman
 
 **Environment:** Safari
 
+![Add a new pet : API](https://user-images.githubusercontent.com/109477059/210549721-4c0da3dc-aaca-4518-a20b-ff8dd508b1f8.png)
+
