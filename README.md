@@ -4,7 +4,10 @@ Below some test cases I made for API Testing + screenshots from Postman
 
 ----------------------------
 
-**Description:** Open an API on Postman website
+**Title:** Open an API on Postman website
+
+**Description:** 
+Test how an API is opened to be created/updated/deleted
 
 ** Steps to Reproduce:** 
 
@@ -22,9 +25,14 @@ Below some test cases I made for API Testing + screenshots from Postman
 ----------------------------
 ###### POST
 
-**Description:** Create an API/ Add a new pet to the store (using Swagger website)
+**Title:** 
+Create an API
 
-**Preconditions:** Open the Postman website version: https://speeding-meadow-227188.postman.co & log in with your credentials
+**Description:** 
+Add a new pet to the store (using Swagger website)
+
+**Preconditions:** 
+Open the Postman website: https://speeding-meadow-227188.postman.co & log in with your credentials
 
 **STR:** 
 
@@ -45,11 +53,14 @@ Below some test cases I made for API Testing + screenshots from Postman
 15. Complete the textbox with details: id, name, status for the new pet
 16. Hit the "Send" button
 
-**Expected results:** The new pet has been successfully added with Status: 200 OK and all the details are displayed in the Body textbox.
+**Expected results:** 
+The new pet has been successfully added with Status: 200 OK and all the details are displayed in the Body textbox.
 
-**Test data:** id: 1 & name: "Alfie"
+**Test data:** 
+id: 1 & name: "Alfie"
 
-**Environment:** Safari
+**Environment:** 
+Safari
 
 ![Add a new pet : API](https://user-images.githubusercontent.com/109477059/210549721-4c0da3dc-aaca-4518-a20b-ff8dd508b1f8.png)
 
@@ -57,9 +68,14 @@ Below some test cases I made for API Testing + screenshots from Postman
 
 ###### PUT
 
-**Description:** Update an existing pet
+**Title:**
+Update an API
 
-**Preconditions:** Open the Postman website version: https://speeding-meadow-227188.postman.co & log in with your credentials
+**Description:** 
+Update an existing pet
+
+**Preconditions:** 
+Open the Postman website: https://speeding-meadow-227188.postman.co & log in with your credentials
 
 **Steps to Reproduce:** 
 
@@ -81,9 +97,14 @@ Below some test cases I made for API Testing + screenshots from Postman
 
 ###### GET
 
-**Description:** Find a pet by ID after the pet has been created 
+**Title:**
+Find an API
 
-**Preconditions:** Open the Postman website version: https://speeding-meadow-227188.postman.co & log in with your credentials
+**Description:** 
+Find a pet by ID after the pet has been created 
+
+**Preconditions:** 
+Open the Postman website version: https://speeding-meadow-227188.postman.co & log in with your credentials
 
 **STR:** 
 
@@ -93,9 +114,11 @@ Below some test cases I made for API Testing + screenshots from Postman
 4. According to the Swagger documentation add the petID at the end of the link: "/1"
 5. Click on "Send" button
 
-**Expected results:** All the details about the pet are displayed
+**Expected results:** 
+All the details about the pet are displayed
 
-**Environment:** Safari
+**Environment:** 
+Safari
 
 ![Find a pet](https://user-images.githubusercontent.com/109477059/210568020-dd66b251-4d59-406c-a891-b6a4d410a2f9.png)
 
@@ -103,9 +126,14 @@ Below some test cases I made for API Testing + screenshots from Postman
 
 ###### DELETE
 
-**Description:** Delete a pet (already created and updated)
+**Title:**
+Delete an existing API
 
-**Preconditions:** Open the Postman website version: https://speeding-meadow-227188.postman.co & log in with your credentials
+**Description:** 
+Delete a pet (already created and updated)
+
+**Preconditions:** 
+Open the Postman website version: https://speeding-meadow-227188.postman.co & log in with your credentials
 
 **Steps to Reproduce:
 
@@ -114,17 +142,24 @@ Below some test cases I made for API Testing + screenshots from Postman
 3. According to the documentation in this link: https://petstore.swagger.io/#/pet/deletePet add the id "1" at the end of the copied URL https://petstore.swagger.io/v2/pet/
 4. Click on the "Send" button
 
-**Expected results:** The pet with id 1 was deleted and all the information has been erased. 
+**Expected results:** 
+The pet with id 1 was deleted and all the information has been erased. 
 
-**Environment:** Safari
+**Environment:** 
+Safari
 
 ![Delete a pet](https://user-images.githubusercontent.com/109477059/210572802-29194562-155e-4257-a84b-32fe7d39bdd8.png)
 
 ------------------------------
 
-**Description:** Postman/ Checking if "DELETE" Request is working properly
+**Title:**
+Test if "DELETE" Request is working properly on Postman
 
-**Preconditions:** Open the Postman website version: https://speeding-meadow-227188.postman.co & log in with your credentials
+**Description:** 
+The user check if the existing API has been successfully deleted
+
+**Preconditions:** 
+Open the Postman website version: https://speeding-meadow-227188.postman.co & log in with your credentials
 
 **STR:**
 
@@ -133,11 +168,10 @@ Below some test cases I made for API Testing + screenshots from Postman
 3. Select "GET" from the droplist
 4. Hit the "Send" button
 
-**Expected results:** The message "Pet not found" with status 404 is displayed in the Body textbox
+**Expected results:** 
+The message "Pet not found" with status 404 is displayed in the Body textbox
 
-**Environment:** Google Chrome
+**Environment:** 
+Google Chrome
 
 ![Delete functionality](https://user-images.githubusercontent.com/109477059/210574644-98bbacc4-1b49-41ff-89b9-b53be885597b.png)
-
-
-
