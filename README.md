@@ -120,4 +120,24 @@ Below some test cases I made for API Testing + screenshots from Postman
 
 ![Delete a pet](https://user-images.githubusercontent.com/109477059/210572802-29194562-155e-4257-a84b-32fe7d39bdd8.png)
 
+------------------------------
+
+**Description:** Postman/ Checking if "DELETE" Request is working properly
+
+**Preconditions:** Open the Postman website version: https://speeding-meadow-227188.postman.co & log in with your credentials
+
+**STR:**
+
+1. Open a new API: Workspaces/My Workspaces/ New/ Select "HTTP" request
+2. Insert https://petstore.swagger.io/v2/pet/1 into the requested URL
+3. Select "GET" from the droplist
+4. Hit the "Send" button
+
+**Expected results:** The message "Pet not found" with status 404 is displayed in the Body textbox
+
+**Environment:** Google Chrome
+
+![Delete functionality](https://user-images.githubusercontent.com/109477059/210574644-98bbacc4-1b49-41ff-89b9-b53be885597b.png)
+
+
 
