@@ -1,6 +1,6 @@
 # APITesting
 
-Below some test cases I made for APIs + screenshots from Postman
+Below some test cases I made for API Testing + screenshots from Postman
 
 ----------------------------
 
@@ -65,9 +65,33 @@ Below some test cases I made for APIs + screenshots from Postman
 3. Add https://petstore.swagger.io/v2/pet into requested URL textbox
 4. Go to https://petstore.swagger.io/#/pet/updatePet and copy the required body
 5. Paste it on Postman in Body/raw/json/cell 1
-6. Update "id" with "7" and "name" with "Max"
+6. Update the "name" with "Max", id remain "1"
 7. Hit the "Send" button
 
 **Expected results:** The new pet has been successfully updated and all the details are displayed into the Body textbox
 
 **Environment:** Safari
+
+![Update an API](https://user-images.githubusercontent.com/109477059/210566211-1b2713eb-edbe-4e35-95a9-b4506a67146e.png)
+
+--------------------------------
+
+**Description:** Find a pet by ID after the pet has been created 
+
+**Preconditions:** Open the Postman website version: https://speeding-meadow-227188.postman.co & log in with your credentials
+
+**STR:** 
+
+1. Open a new API: Workspaces/My Workspaces/ New/ Select "HTTP" request
+2. Select "GET" from droplist
+3. Insert the POST URL created before for a new pet / https://petstore.swagger.io/v2/pet
+4. According to the Swagger documentation add the petID at the end of the link: "/1"
+5. Click on "Send" button
+
+**Expected results:** All the details about the pet are displayed
+
+**Environment:** Safari
+
+![Find a pet](https://user-images.githubusercontent.com/109477059/210568020-dd66b251-4d59-406c-a891-b6a4d410a2f9.png)
+
+
