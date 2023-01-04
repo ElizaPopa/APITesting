@@ -20,6 +20,7 @@ Below some test cases I made for API Testing + screenshots from Postman
 **Environment:** Safari
 
 ----------------------------
+###### POST
 
 **Description:** Create an API/ Add a new pet to the store (using Swagger website)
 
@@ -54,6 +55,8 @@ Below some test cases I made for API Testing + screenshots from Postman
 
 -------------------------------
 
+###### PUT
+
 **Description:** Update an existing pet
 
 **Preconditions:** Open the Postman website version: https://speeding-meadow-227188.postman.co & log in with your credentials
@@ -76,6 +79,8 @@ Below some test cases I made for API Testing + screenshots from Postman
 
 --------------------------------
 
+###### GET
+
 **Description:** Find a pet by ID after the pet has been created 
 
 **Preconditions:** Open the Postman website version: https://speeding-meadow-227188.postman.co & log in with your credentials
@@ -93,5 +98,26 @@ Below some test cases I made for API Testing + screenshots from Postman
 **Environment:** Safari
 
 ![Find a pet](https://user-images.githubusercontent.com/109477059/210568020-dd66b251-4d59-406c-a891-b6a4d410a2f9.png)
+
+----------------------------------
+
+###### DELETE
+
+**Description:** Delete a pet (already created and updated)
+
+**Preconditions:** Open the Postman website version: https://speeding-meadow-227188.postman.co & log in with your credentials
+
+**Steps to Reproduce:
+
+1. Open a new API: Workspaces/My Workspaces/ New/ Select "HTTP" request
+2. Select "DELETE" from droplist
+3. According to the documentation in this link: https://petstore.swagger.io/#/pet/deletePet add the id "1" at the end of the copied URL https://petstore.swagger.io/v2/pet/
+4. Click on the "Send" button
+
+**Expected results:** The pet with id 1 was deleted and all the information has been erased. 
+
+**Environment:** Safari
+
+![Delete a pet](https://user-images.githubusercontent.com/109477059/210572802-29194562-155e-4257-a84b-32fe7d39bdd8.png)
 
 
