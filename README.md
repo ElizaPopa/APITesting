@@ -52,3 +52,22 @@ Below some test cases I made for APIs + screenshots from Postman
 
 ![Add a new pet : API](https://user-images.githubusercontent.com/109477059/210549721-4c0da3dc-aaca-4518-a20b-ff8dd508b1f8.png)
 
+-------------------------------
+
+**Description:** Update an existing pet
+
+**Preconditions:** Open the Postman website version: https://speeding-meadow-227188.postman.co & log in with your credentials
+
+**Steps to Reproduce:** 
+
+1. Open a new API: Workspaces/My Workspaces/ New/ Select "HTTP" request
+2. Select "PUT" from droplist
+3. Add https://petstore.swagger.io/v2/pet into requested URL textbox
+4. Go to https://petstore.swagger.io/#/pet/updatePet and copy the required body
+5. Paste it on Postman in Body/raw/json/cell 1
+6. Update "id" with "7" and "name" with "Max"
+7. Hit the "Send" button
+
+**Expected results:** The new pet has been successfully updated and all the details are displayed into the Body textbox
+
+**Environment:** Safari
